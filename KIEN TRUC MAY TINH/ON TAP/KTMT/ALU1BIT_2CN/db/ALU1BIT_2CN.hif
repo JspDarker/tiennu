@@ -1,0 +1,62 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+11
+1040
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ALU1BIT_2CN
+# storage
+db|ALU1BIT_2CN.(0).cnf
+db|ALU1BIT_2CN.(0).cnf
+# case_insensitive
+# source_file
+ALU1BIT_2CN.bdf
+e1b449558658e879ffa6b5258a436c66
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+MUX2_1_1BIT
+# storage
+db|ALU1BIT_2CN.(1).cnf
+db|ALU1BIT_2CN.(1).cnf
+# case_insensitive
+# source_file
+MUX2_1_1BIT.bdf
+30aded76987119359c403a4d51db1fec
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUX2_1_1BIT:inst
+}
+# macro_sequence
+
+# end
+# complete
+

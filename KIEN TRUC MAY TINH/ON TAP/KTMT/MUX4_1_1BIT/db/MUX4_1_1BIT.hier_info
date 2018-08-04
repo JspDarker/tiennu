@@ -1,0 +1,14 @@
+|MUX4_1_1BIT
+m <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+s1 => inst.IN0
+s1 => inst4.IN0
+s1 => inst5.IN0
+s0 => inst1.IN0
+s0 => inst5.IN1
+s0 => inst3.IN1
+a => inst2.IN2
+c => inst4.IN2
+d => inst5.IN2
+b => inst3.IN2
+
+

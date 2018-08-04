@@ -1,0 +1,45 @@
+|ALU_1BIT_4CN
+COUT <= FA:inst4.COUT
+A => FA:inst4.A
+A => inst.IN0
+A => inst1.IN1
+A => inst3.IN0
+B => inst2.IN0
+B => inst.IN1
+B => inst1.IN0
+B => inst3.IN1
+CONTROL => inst2.IN1
+CIN => FA:inst4.CIN
+M <= MUX_4_1_1BIT:inst6.M
+S1 => MUX_4_1_1BIT:inst6.S1
+S0 => MUX_4_1_1BIT:inst6.S0
+S0 => S01.DATAIN
+A1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= FA:inst4.S
+S01 <= S0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_1BIT_4CN|FA:inst4
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst.IN1
+CIN => inst2.IN1
+COUT <= <GND>
+
+
+|ALU_1BIT_4CN|MUX_4_1_1BIT:inst6
+M <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst6.IN0
+S1 => inst3.IN0
+S1 => inst4.IN0
+S0 => inst7.IN0
+S0 => inst4.IN1
+S0 => inst2.IN1
+A => inst.IN2
+C => inst3.IN2
+D => inst4.IN2
+B => inst2.IN2
+
+

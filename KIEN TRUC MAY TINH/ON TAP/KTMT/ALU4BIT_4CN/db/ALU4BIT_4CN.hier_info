@@ -1,0 +1,208 @@
+|ALU4BIT_4CN
+M[0] <= ALU1BIT_4CN:inst.m
+M[1] <= ALU1BIT_4CN:inst1.m
+M[2] <= ALU1BIT_4CN:inst2.m
+M[3] <= ALU1BIT_4CN:inst3.m
+S1 => ALU1BIT_4CN:inst.s1
+S1 => ALU1BIT_4CN:inst1.s1
+S1 => ALU1BIT_4CN:inst2.s1
+S1 => ALU1BIT_4CN:inst3.s1
+S0 => ALU1BIT_4CN:inst.s0
+S0 => ALU1BIT_4CN:inst1.s0
+S0 => ALU1BIT_4CN:inst2.s0
+S0 => ALU1BIT_4CN:inst3.s0
+A[0] => ALU1BIT_4CN:inst.a
+A[1] => ALU1BIT_4CN:inst1.a
+A[2] => ALU1BIT_4CN:inst2.a
+A[3] => ALU1BIT_4CN:inst3.a
+B[0] => ALU1BIT_4CN:inst.b
+B[1] => ALU1BIT_4CN:inst1.b
+B[2] => ALU1BIT_4CN:inst2.b
+B[3] => ALU1BIT_4CN:inst3.b
+CONTROL => ALU1BIT_4CN:inst.control
+CONTROL => ALU1BIT_4CN:inst.cin
+CONTROL => ALU1BIT_4CN:inst1.control
+CONTROL => ALU1BIT_4CN:inst2.control
+CONTROL => ALU1BIT_4CN:inst3.control
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst
+m <= MUX4_1_1BIT:inst.m
+s1 => MUX4_1_1BIT:inst.s1
+s0 => MUX4_1_1BIT:inst.s0
+a => inst1.IN0
+a => inst2.IN1
+a => inst3.IN0
+a => FA:inst4.A
+b => inst1.IN1
+b => inst2.IN0
+b => inst3.IN1
+b => inst9.IN0
+control => inst9.IN1
+cin => FA:inst4.CIN
+cout <= FA:inst4.COUT
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst|MUX4_1_1BIT:inst
+m <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+s1 => inst.IN0
+s1 => inst4.IN0
+s1 => inst5.IN0
+s0 => inst1.IN0
+s0 => inst5.IN1
+s0 => inst3.IN1
+a => inst2.IN2
+c => inst4.IN2
+d => inst5.IN2
+b => inst3.IN2
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst|FA:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+CIN => inst1.IN1
+CIN => inst3.IN1
+CIN => inst4.IN1
+COUT <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst1
+m <= MUX4_1_1BIT:inst.m
+s1 => MUX4_1_1BIT:inst.s1
+s0 => MUX4_1_1BIT:inst.s0
+a => inst1.IN0
+a => inst2.IN1
+a => inst3.IN0
+a => FA:inst4.A
+b => inst1.IN1
+b => inst2.IN0
+b => inst3.IN1
+b => inst9.IN0
+control => inst9.IN1
+cin => FA:inst4.CIN
+cout <= FA:inst4.COUT
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst1|MUX4_1_1BIT:inst
+m <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+s1 => inst.IN0
+s1 => inst4.IN0
+s1 => inst5.IN0
+s0 => inst1.IN0
+s0 => inst5.IN1
+s0 => inst3.IN1
+a => inst2.IN2
+c => inst4.IN2
+d => inst5.IN2
+b => inst3.IN2
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst1|FA:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+CIN => inst1.IN1
+CIN => inst3.IN1
+CIN => inst4.IN1
+COUT <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst2
+m <= MUX4_1_1BIT:inst.m
+s1 => MUX4_1_1BIT:inst.s1
+s0 => MUX4_1_1BIT:inst.s0
+a => inst1.IN0
+a => inst2.IN1
+a => inst3.IN0
+a => FA:inst4.A
+b => inst1.IN1
+b => inst2.IN0
+b => inst3.IN1
+b => inst9.IN0
+control => inst9.IN1
+cin => FA:inst4.CIN
+cout <= FA:inst4.COUT
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst2|MUX4_1_1BIT:inst
+m <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+s1 => inst.IN0
+s1 => inst4.IN0
+s1 => inst5.IN0
+s0 => inst1.IN0
+s0 => inst5.IN1
+s0 => inst3.IN1
+a => inst2.IN2
+c => inst4.IN2
+d => inst5.IN2
+b => inst3.IN2
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst2|FA:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+CIN => inst1.IN1
+CIN => inst3.IN1
+CIN => inst4.IN1
+COUT <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst3
+m <= MUX4_1_1BIT:inst.m
+s1 => MUX4_1_1BIT:inst.s1
+s0 => MUX4_1_1BIT:inst.s0
+a => inst1.IN0
+a => inst2.IN1
+a => inst3.IN0
+a => FA:inst4.A
+b => inst1.IN1
+b => inst2.IN0
+b => inst3.IN1
+b => inst9.IN0
+control => inst9.IN1
+cin => FA:inst4.CIN
+cout <= FA:inst4.COUT
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst3|MUX4_1_1BIT:inst
+m <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+s1 => inst.IN0
+s1 => inst4.IN0
+s1 => inst5.IN0
+s0 => inst1.IN0
+s0 => inst5.IN1
+s0 => inst3.IN1
+a => inst2.IN2
+c => inst4.IN2
+d => inst5.IN2
+b => inst3.IN2
+
+
+|ALU4BIT_4CN|ALU1BIT_4CN:inst3|FA:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+CIN => inst1.IN1
+CIN => inst3.IN1
+CIN => inst4.IN1
+COUT <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

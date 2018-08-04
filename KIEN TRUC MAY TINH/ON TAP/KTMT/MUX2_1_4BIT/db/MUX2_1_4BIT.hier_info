@@ -1,0 +1,51 @@
+|MUX2_1_4BIT
+M[0] <= MUX2_1_1BIT:inst.m
+M[1] <= MUX2_1_1BIT:inst1.m
+M[2] <= MUX2_1_1BIT:inst2.m
+M[3] <= MUX2_1_1BIT:inst3.m
+s => MUX2_1_1BIT:inst3.s
+s => MUX2_1_1BIT:inst2.s
+s => MUX2_1_1BIT:inst1.s
+s => MUX2_1_1BIT:inst.s
+A[0] => MUX2_1_1BIT:inst.a
+A[1] => MUX2_1_1BIT:inst1.a
+A[2] => MUX2_1_1BIT:inst2.a
+A[3] => MUX2_1_1BIT:inst3.a
+B[0] => MUX2_1_1BIT:inst.b
+B[1] => MUX2_1_1BIT:inst1.b
+B[2] => MUX2_1_1BIT:inst2.b
+B[3] => MUX2_1_1BIT:inst3.b
+
+
+|MUX2_1_4BIT|MUX2_1_1BIT:inst3
+m <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+s => inst2.IN0
+s => inst.IN0
+b => inst2.IN1
+a => inst1.IN1
+
+
+|MUX2_1_4BIT|MUX2_1_1BIT:inst2
+m <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+s => inst2.IN0
+s => inst.IN0
+b => inst2.IN1
+a => inst1.IN1
+
+
+|MUX2_1_4BIT|MUX2_1_1BIT:inst1
+m <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+s => inst2.IN0
+s => inst.IN0
+b => inst2.IN1
+a => inst1.IN1
+
+
+|MUX2_1_4BIT|MUX2_1_1BIT:inst
+m <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+s => inst2.IN0
+s => inst.IN0
+b => inst2.IN1
+a => inst1.IN1
+
+

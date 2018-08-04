@@ -1,0 +1,86 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+7
+3344
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+nhan4bit
+# storage
+db|nhan4bit.(0).cnf
+db|nhan4bit.(0).cnf
+# case_insensitive
+# source_file
+nhan4bit.bdf
+cd79536a9e6899d9edebc9444ddea0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+HA
+# storage
+db|nhan4bit.(1).cnf
+db|nhan4bit.(1).cnf
+# case_insensitive
+# source_file
+HA.bdf
+9382e11128b5ffcfe76eb8af8d2e4df
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+HA:inst16
+HA:inst13
+HA:inst18
+}
+# macro_sequence
+
+# end
+# entity
+FA
+# storage
+db|nhan4bit.(2).cnf
+db|nhan4bit.(2).cnf
+# case_insensitive
+# source_file
+FA.bdf
+1236f9dffae5292b22a36c16c6c36528
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FA:inst14
+FA:inst15
+FA:inst17
+}
+# macro_sequence
+
+# end
+# complete
+

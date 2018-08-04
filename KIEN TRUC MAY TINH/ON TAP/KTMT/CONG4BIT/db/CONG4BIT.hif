@@ -1,0 +1,84 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+11
+1040
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+CONG4BIT
+# storage
+db|CONG4BIT.(0).cnf
+db|CONG4BIT.(0).cnf
+# case_insensitive
+# source_file
+CONG4BIT.bdf
+6bc4e87d91f72756619919bbe4126912
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FA
+# storage
+db|CONG4BIT.(1).cnf
+db|CONG4BIT.(1).cnf
+# case_insensitive
+# source_file
+FA.bdf
+ce04bd2eb1a2272e4b49d679b9adc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FA:inst3
+FA:inst2
+FA:inst1
+}
+# macro_sequence
+
+# end
+# entity
+HA
+# storage
+db|CONG4BIT.(2).cnf
+db|CONG4BIT.(2).cnf
+# case_insensitive
+# source_file
+HA.bdf
+80c0992bd38a48a17e1d8e361ae7d9f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+HA:inst
+}
+# macro_sequence
+
+# end
+# complete
+

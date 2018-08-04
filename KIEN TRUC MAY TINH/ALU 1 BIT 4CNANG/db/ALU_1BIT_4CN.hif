@@ -1,0 +1,82 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+1040
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+MUX_4_1_1BIT
+# storage
+db|ALU_1BIT_4CN.(2).cnf
+db|ALU_1BIT_4CN.(2).cnf
+# case_insensitive
+# source_file
+MUX_4_1_1BIT.bdf
+65783750900a39f45893e7519a96
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUX_4_1_1BIT:inst6
+}
+# macro_sequence
+
+# end
+# entity
+ALU_1BIT_4CN
+# storage
+db|ALU_1BIT_4CN.(0).cnf
+db|ALU_1BIT_4CN.(0).cnf
+# case_insensitive
+# source_file
+ALU_1BIT_4CN.bdf
+e64babf9ce93a971119ddc8da6a02980
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FA
+# storage
+db|ALU_1BIT_4CN.(1).cnf
+db|ALU_1BIT_4CN.(1).cnf
+# case_insensitive
+# source_file
+FA.bdf
+49d494bc5a485191358ae8e20db1b49
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FA:inst4
+}
+# macro_sequence
+
+# end
+# complete
+

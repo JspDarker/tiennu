@@ -1,0 +1,8 @@
+|FLIPFLOP_D
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clock => inst.CLK
+T => inst.DATAIN
+Preset => inst.PRESET
+
+
